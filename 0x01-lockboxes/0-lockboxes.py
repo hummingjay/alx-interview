@@ -3,6 +3,7 @@
 Function to check if you can unlock all boxes
 """
 
+
 def canUnlockAll(boxes):
     """
     method to check if all boxes are opened
@@ -29,7 +30,7 @@ def canUnlockAll(boxes):
 
         # Loop thru box which is a lsit for Keys
         for key in boxes[current_box]:
-            #Check validity if 0 < key < n
+            # Check validity if 0 < key < n
             # Has not been visited
             if key >= 0 and key < n and not visited[key]:
                 # if pass check set key visited
