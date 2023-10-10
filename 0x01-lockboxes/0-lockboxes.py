@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Solving Lockboxes puzzle
+This is a module that provides a function for determining if all
+boxes in a given list can be opened.
 """
 
 
