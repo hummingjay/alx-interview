@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Solving Lockboxes puzzle"""
+""" Solving Lockboxes puzzle"""
 
 
 def canUnlockAll(boxes):
@@ -8,6 +8,7 @@ def canUnlockAll(boxes):
     if all open Return True
     else return False
     """
+
     # Checks if input is empty
     if not boxes:
         return False
