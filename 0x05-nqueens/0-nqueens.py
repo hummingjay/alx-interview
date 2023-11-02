@@ -7,6 +7,7 @@ non-attacking queens on an N×N chessboard.
 
 import sys
 
+
 def is_safe(board, row, col, n):
     """
     Check if pieces are safe not attacking
@@ -28,6 +29,7 @@ def is_safe(board, row, col, n):
 
     return True
 
+
 def print_solution(board):
     """
     Define how output will be printed
@@ -38,6 +40,7 @@ def print_solution(board):
             if board[row][col] == 1:
                 solution.append([row, col])
     print(solution)
+
 
 def solve_nqueens(n):
     """
@@ -60,6 +63,7 @@ def solve_nqueens(n):
     board = [[0] * n for _ in range(n)]
     solve(board, 0)
 
+
 if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("Usage: nqueens N")
@@ -71,4 +75,3 @@ if __name__ == "__main__":
     except ValueError:
         print("N must be a number")
         sys.exit(1)
-
