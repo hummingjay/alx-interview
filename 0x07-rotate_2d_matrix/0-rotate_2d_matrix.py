@@ -12,7 +12,6 @@ def rotate_2d_matrix(matrix):
     by 90 degrees
     """
 
-
     n = len(matrix)
 
     # transpose matrix aka switch row and column
