@@ -4,6 +4,7 @@ Method that determines fewest number of coins
 needed to meet agiven amount total from a list
 """
 
+
 def makeChange(coins, total):
     """
     Function that takes a list of coins
