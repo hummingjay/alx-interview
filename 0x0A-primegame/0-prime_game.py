@@ -6,8 +6,14 @@ make list then determine winner when can't play next round.
 
 
 def isWinner(x, nums):
+    """
+    checks to find the winner of the game
+    """
     # checks if num is prime
     def is_prime(num):
+        """
+        checks if num is a prime
+        """
         if num < 2:
             return False
         for i in range(2, int(num ** 0.5) + 1):
@@ -17,6 +23,9 @@ def isWinner(x, nums):
 
     # makes a list of primes
     def get_primes(n):
+        """
+        Gathers Prime Numbers and returns list
+        """
         primes = []
         for i in range(n+1):
             if is_prime(i):
@@ -25,6 +34,9 @@ def isWinner(x, nums):
 
     # Remove prime and multiples
     def p_n_m(prime, numbers):
+        """
+        Removes the prime number and its multiples
+        """
         # using shallow copy for iteration
         for num in numbers.copy():
             if num % prime == 0:
