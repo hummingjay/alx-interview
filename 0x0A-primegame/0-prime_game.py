@@ -44,11 +44,13 @@ def isWinner(x, nums):
     ben_win = 0
 
     for _ in range(x):
+        if _ >= len(nums):
+            _ %= len(nums)
         maria_turn = True
         primes = get_primes(nums[_])
         turn = [*range(nums[_] + 1)]
 
-        while primes: # while list not empty
+        while primes:  # while list not empty
             prime = min(primes)
             primes.remove(prime)
             p_n_m(prime, turn)
